@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-between;
+}
+
+
+.message {
+    width: 50%;
+    background-color: #e3e3e3;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #333;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: large;
+    font-family: "Comic Sans MS";
+}
+
+/* Navbar styling */
+.navbar {
+    width: 150px;
+    background-color: oldlace;
+    padding: 15px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    text-align: left;
+    font-family: "Comic Sans MS";
+    justify-content: center;
+}
+
+
+.content {
+    margin-left: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #333;
+    border-radius: 10px;
+    align-self: end;
+
+}
