@@ -43,3 +43,10 @@ img {
     border-radius: 10px;
     align-self: end;
 }
+
+.w3-border{
+    border: 2px solid #333
+}
+#mySidebar{
+    display: none;
+}
