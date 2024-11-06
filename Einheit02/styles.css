@@ -1,0 +1,165 @@
+/* Base Styles */
+body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background-image: url("../images/bg.png");
+    background-repeat: repeat;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+/* Master Container */
+.master {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Wrapper */
+.wrapper {
+    width: 100%;
+    background-color: #dcd4c7;
+    padding-top: 37px;
+}
+
+/* Header */
+.header img {
+    width: 100%;
+    height: auto;
+}
+
+/* Navigation and Header Image */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navi {
+    flex: 0 0 170px;
+    margin-top: 10px;
+    padding-right: 20px;
+    height: 296px;
+}
+
+.imghead {
+    flex: 1;
+}
+
+ul#navi {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul#navi li {
+    font-weight: bold;
+    color: #727272;
+    font-variant: small-caps;
+}
+
+ul#navi a {
+    text-decoration: none;
+    color: black;
+}
+
+ul#navi a:hover,
+ul#navi a#active {
+    color: #f37d18;
+}
+
+/* Content and Footer Container */
+.content-footer-container {
+    position: relative;
+    width: 100%;
+}
+
+/* Content Area */
+.content {
+    display: flex;
+}
+
+/* Content-links (Left Sidebar) */
+.content-links {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 170px;
+    padding-right: 20px;
+    z-index: 2;
+}
+
+#textbottom {
+    font-variant: small-caps;
+    text-align: right;
+    color: white;
+    font-weight: bold;
+}
+
+/* Content-rechts (Main Content) */
+.content-rechts {
+    margin-left: 190px; /* Width of content-links (170px) + padding-right (20px) */
+    flex: 1;
+}
+
+/* Responsive Video */
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.footer img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Typography */
+body {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navi, .imghead, .content-links, .content-rechts {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+    .content {
+        flex-direction: column;
+    }
+    .content-links {
+        position: static;
+        width: 100%;
+        margin-bottom: 20px;
+        z-index: auto;
+    }
+    .content-rechts {
+        margin-left: 0;
+    }
+}

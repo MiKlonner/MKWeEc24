@@ -50,3 +50,18 @@ img {
 #mySidebar{
     display: none;
 }
+
+.header{
+    padding-top: 20px;
+}
+
+.navi{
+
+}
+
+body{
+    font-family: Georgia, "Times new Roman", Times, serif;
+    background-image:url("../images/bg.png");
+    background-repeat:repeat;
+    color: #0000;
+}
